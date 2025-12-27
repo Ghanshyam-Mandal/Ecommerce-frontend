@@ -10,7 +10,7 @@ export const addNewProduct = createAsyncThunk(
   '/products/addnewproduct',
   async (formData) => {
     const result = await axios.post(
-      'import.meta.env.VITE_BACKEND_BASEURL/api/admin/products/add',
+      `import.meta.env.VITE_BACKEND_BASEURL/api/admin/products/add`,
       formData,
       {
         headers: {
@@ -25,7 +25,7 @@ export const fetchAllProducts = createAsyncThunk(
   '/products/fetchAllProducts',
   async () => {
     const result = await axios.get(
-      'import.meta.env.VITE_BACKEND_BASEURL/api/admin/products/get'
+      `import.meta.env.VITE_BACKEND_BASEURL/api/admin/products/get`
     );
     return result?.data;
   }

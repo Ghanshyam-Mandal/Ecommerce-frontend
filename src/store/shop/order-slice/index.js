@@ -12,7 +12,7 @@ export const createNewOrder = createAsyncThunk(
   '/order/createNewOrder',
   async (orderData) => {
     const response = await axios.post(
-      'import.meta.env.VITE_BACKEND_BASEURL/api/shop/order/create',
+      `import.meta.env.VITE_BACKEND_BASEURL/api/shop/order/create`,
       orderData
     );
     return response.data;
@@ -22,7 +22,7 @@ export const capturePayment = createAsyncThunk(
   'order/capturePayment',
   async ({ paymentId, payerId, orderId }) => {
     const response = await axios.post(
-      'import.meta.env.VITE_BACKEND_BASEURL/api/shop/order/capture',
+      `import.meta.env.VITE_BACKEND_BASEURL/api/shop/order/capture`,
       { paymentId, payerId, orderId }
     );
     return response.data;
