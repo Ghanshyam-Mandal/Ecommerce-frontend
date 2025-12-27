@@ -1,4 +1,4 @@
-import AdminOrderDetailView from '@/components/admin-view/order-details';
+import AdminOrderDetailView from '@/components/admin-view/orderDetails';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Dialog } from '@/components/ui/dialog';
